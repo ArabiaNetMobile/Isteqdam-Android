@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/enterMobileBG"
+    tools:context=".Controller.ConfirmCode">
+
+    <TextView
+        android:id="@+id/enterConfirmCodeLbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:text="@string/enterConfirmCode"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="@color/enterMobileTxtDarkBlue"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/firstChar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_4sdp"
+            android:layout_marginRight="@dimen/_4sdp"
+            android:layout_weight="1"
+            android:background="@color/confirmCodeField"
+            android:ems="10"
+            android:inputType="textPersonName|number" />
+
+        <EditText
+            android:id="@+id/secondChar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_4sdp"
+            android:layout_marginRight="@dimen/_4sdp"
+            android:layout_weight="1"
+            android:background="@color/confirmCodeField"
+            android:ems="10"
+            android:inputType="textPersonName|number" />
+
+        <EditText
+            android:id="@+id/thirdChar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_4sdp"
+            android:layout_marginRight="@dimen/_4sdp"
+            android:layout_weight="1"
+            android:background="@color/confirmCodeField"
+            android:ems="10"
+            android:inputType="textPersonName|number" />
+
+        <EditText
+            android:id="@+id/fourthChar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_4sdp"
+            android:layout_marginRight="@dimen/_4sdp"
+            android:layout_weight="1"
+            android:background="@color/confirmCodeField"
+            android:ems="10"
+            android:inputType="textPersonName|number" />
+
+        <EditText
+            android:id="@+id/fifthChar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_4sdp"
+            android:layout_marginRight="@dimen/_4sdp"
+            android:layout_weight="1"
+            android:background="@color/confirmCodeField"
+            android:ems="10"
+            android:inputType="textPersonName|number" />
+
+        <EditText
+            android:id="@+id/sixthChar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_4sdp"
+            android:layout_marginRight="@dimen/_4sdp"
+            android:layout_weight="1"
+            android:background="@color/confirmCodeField"
+            android:ems="10"
+            android:inputType="textPersonName|number" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/enterConfirmCodeBorder"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_3sdp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@android:color/background_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/confirmCodeBtn" />
+
+    <Button
+        android:id="@+id/enterAnotherNumberBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:background="@color/confirmCodeField"
+        android:onClick="changeNumber"
+        android:paddingLeft="@dimen/_4sdp"
+        android:paddingRight="@dimen/_4sdp"
+        android:text="@string/enterAnotherNumber"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintEnd_toEndOf="@+id/enterConfirmCodeBorder"
+        app:layout_constraintTop_toBottomOf="@+id/enterConfirmCodeBorder" />
+
+    <Button
+        android:id="@+id/resendCodeBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:background="@color/confirmCodeField"
+        android:onClick="resendCode"
+        android:paddingLeft="@dimen/_4sdp"
+        android:paddingRight="@dimen/_4sdp"
+        android:text="@string/resendCode"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintStart_toStartOf="@+id/enterConfirmCodeBorder"
+        app:layout_constraintTop_toBottomOf="@+id/enterConfirmCodeBorder" />
+
+    <Button
+        android:id="@+id/confirmCodeBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@android:color/background_light"
+        android:onClick="confirmCode"
+        android:paddingLeft="@dimen/_10sdp"
+        android:paddingRight="@dimen/_10sdp"
+        android:text="@string/confirm"
+        android:textColor="@color/enterMobileTxtDarkBlue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <ProgressBar
+        android:id="@+id/progressBarConfirmCode"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

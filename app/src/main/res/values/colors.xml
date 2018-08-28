@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="enterMobileBG">#b7d9ff</color>
+    <color name="enterMobileTxtDarkBlue">#4687c8</color>
+    <color name="confirmCodeField">#6ea5db</color>
+    <color name="sendRequestBG">#f8f8f8</color>
+    <color name="searchWorkersTitle">#5c5c5c</color>
+    <color name="sendRequestTitle">#7f7f7f</color>
+    <color name="myRequestBtn">#c8d943</color>
+    <color name="pendingRequestBtn">#d44c5e</color>
+</resources>

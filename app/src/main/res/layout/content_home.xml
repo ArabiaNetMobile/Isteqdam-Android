@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Controller.Home"
+    tools:showIn="@layout/app_bar_home">
+
+    <LinearLayout
+        android:id="@+id/services"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/firstRow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/searchWorkers"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="@dimen/_10sdp">
+
+                <ImageView
+                    android:id="@+id/searchWorkersLogo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.4"
+                    app:srcCompat="@drawable/logo" />
+
+                <TextView
+                    android:id="@+id/searchWorkersTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/loremIpsum"
+                    android:textColor="@color/searchWorkersTitle" />
+
+                <Button
+                    android:id="@+id/searchWorkersBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/search_workers_btn"
+                    android:text="@string/searchWorkersBtn"
+                    android:textColor="@android:color/background_light" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/sendRequest"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/sendRequestBG"
+                android:orientation="vertical"
+                android:padding="@dimen/_10sdp">
+
+                <ImageView
+                    android:id="@+id/sendRequestLogo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.4"
+                    app:srcCompat="@drawable/logo" />
+
+                <TextView
+                    android:id="@+id/sendRequestTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/loremIpsum"
+                    android:textColor="@android:color/darker_gray" />
+
+                <Button
+                    android:id="@+id/sendRequestBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/send_request_btn"
+                    android:text="@string/sendRequestBtn"
+                    android:textColor="@android:color/background_light" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/secondRow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/myRequest"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/_2sdp"
+                android:layout_weight="1"
+                android:background="@color/confirmCodeField"
+                android:orientation="vertical"
+                android:padding="@dimen/_10sdp">
+
+                <ImageView
+                    android:id="@+id/myRequestLogo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.4"
+                    app:srcCompat="@drawable/logo" />
+
+                <TextView
+                    android:id="@+id/myRequestTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/loremIpsum"
+                    android:textColor="@android:color/background_light" />
+
+                <Button
+                    android:id="@+id/myRequestBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/confirm_button"
+                    android:text="@string/myRequestBtn"
+                    android:textColor="@color/myRequestBtn" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/pendingRequest"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/_2sdp"
+                android:layout_weight="1"
+                android:background="@color/confirmCodeField"
+                android:orientation="vertical"
+                android:padding="@dimen/_10sdp">
+
+                <ImageView
+                    android:id="@+id/pendingRequestLogo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.4"
+                    app:srcCompat="@drawable/logo" />
+
+                <TextView
+                    android:id="@+id/pendingRequestTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/loremIpsum"
+                    android:textColor="@android:color/background_light" />
+
+                <Button
+                    android:id="@+id/pendingRequestBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/confirm_button"
+                    android:text="@string/pendingRequestBtn"
+                    android:textColor="@color/pendingRequestBtn" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

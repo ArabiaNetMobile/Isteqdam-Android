@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">استقدام</string>
+    <string name="enterPhoneLabel">أدخل رقم الهاتف</string>
+    <string name="confirm">تأكيد</string>
+    <string name="enterPhone">أدخل الرقم</string>
+    <string name="wrongPhoneNumber">رقم الهاتف غير صحيح</string>
+    <string name="networkError">عطل بالشبكة</string>
+    <string name="serverError">عطل بالخادم</string>
+    <string name="enterConfirmCode">أدخل كود التفعيل</string>
+    <string name="wrongConfirmCode">كود التفعيل غير صحيح</string>
+    <string name="msgSentSuccess">تم اعادة ارسال كود التفعيل</string>
+    <string name="signUp">التسجيل</string>
+    <string name="fName">الأسم الأول</string>
+    <string name="lName">الأسم الأخير</string>
+    <string name="email">البريد الألكتروني</string>
+    <string name="identity">رقم الهوية</string>
+    <string name="wrongFName">الأسم الأول غير صحيح</string>
+    <string name="wrongLName">الأسم الأخير غير صحيح</string>
+    <string name="wrongEmail">البريد الألكتروني غير صحيح</string>
+    <string name="signIn">تسجيل الدخول</string>
+    <string name="phone">رقم الهاتف </string>
+    <string name="password">كلمة المرور</string>
+    <string name="login">دخول</string>
+    <string name="wrongUNameOrPass">خطأ باسم المستخدم او كلمة المرور</string>
+    <string name="blocked">لقد تم حظرك,تواصل مع مدير النظام.</string>
+    <string name="noInterntConn">لا يوجد اتصال بالأنترنت ,رادع اعدادات الأتصال وأعد تشغيل التطبيق.</string>
+    <string name="homeTitle">الرئيسية</string>
+    <string name="loremIpsum">لوريم ابسيم شئ جميل</string>
+    <string name="searchWorkersBtn">بحث عن موظف</string>
+    <string name="sendRequestBtn">أرسل طلب</string>
+    <string name="myRequestBtn">طلباتي</string>
+    <string name="pendingRequestBtn">الطلبات المعلقة</string>
+
+</resources>

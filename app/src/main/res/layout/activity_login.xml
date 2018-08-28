@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/enterMobileBG"
+    tools:context=".Controller.Login">
+
+    <TextView
+        android:id="@+id/viewTitleLbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="@dimen/_100sdp"
+        android:text="@string/signIn"
+        android:textColor="@color/enterMobileTxtDarkBlue"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/viewTitleBorder"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_3sdp"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:background="@android:color/background_light"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewTitleLbl" />
+
+    <Button
+        android:id="@+id/loginBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/confirm_button"
+        android:onClick="login"
+        android:text="@string/login"
+        android:textColor="@color/enterMobileTxtDarkBlue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginForm" />
+
+    <LinearLayout
+        android:id="@+id/loginForm"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_75sdp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewTitleBorder">
+
+        <TextView
+            android:id="@+id/userNameLbl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:text="@string/phone"
+            android:textColor="@android:color/background_light" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/confirmCodeField"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/userNameIcon"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/baseline_email_white_48" />
+
+            <TextView
+                android:id="@+id/userNameBorder"
+                android:layout_width="@dimen/_3sdp"
+                android:layout_height="match_parent"
+                android:layout_weight="0"
+                android:background="@android:color/background_light" />
+
+            <EditText
+                android:id="@+id/userNameInput"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                android:background="@null"
+                android:ems="10"
+                android:hint="@string/password"
+                android:inputType="textPersonName"
+                android:paddingLeft="@dimen/_2sdp"
+                android:paddingRight="@dimen/_2sdp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/passwordLbl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:text="@string/password"
+            android:textColor="@android:color/background_light" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/confirmCodeField"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/passwordIcon"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/baseline_lock_white_48" />
+
+            <TextView
+                android:id="@+id/passwordBorder"
+                android:layout_width="@dimen/_3sdp"
+                android:layout_height="match_parent"
+                android:layout_weight="0"
+                android:background="@android:color/background_light" />
+
+            <EditText
+                android:id="@+id/passwordInput"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                android:background="@null"
+                android:ems="10"
+                android:hint="@string/password"
+                android:inputType="textPersonName"
+                android:paddingLeft="@dimen/_2sdp"
+                android:paddingRight="@dimen/_2sdp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBarLogin"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
